@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* Color Virables */
+    --accent: hsl(40, 100%, 68%);
+    --complimentary: hsl(0, 0%, 0%);
+    --neutral:hsl(0, 0%, 100%);
+
+    /* Size Virables */
+    --margin: .7rem;
+
+    --paddingS: .5rem;
+    --paddingL: .7rem;
+
+    --borderWidth: .2rem;
+    --borderRadiusSquareRound: .5rem;
+    --borderRadiusRound: 10rem;
+
+    --gap: 1rem;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: var(--complimentary);
+}
+
+body{
+    background-color: hsl(0, 0%, 85%);
+}
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    display: flex;
+
+    width: 70%;
+    height: 90%;
+
+    background-color: var(--neutral);
+
+    overflow: hidden;
+
+    border-radius: var(--borderRadiusSquareRound);
+}
+
+.ilustartion-container{
+    width: 50%;
+
+    background-image: url("/images/Lemonade_Monochromatic.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+form{
+    box-sizing: border-box;
+    align-self: center;
+    width: 50%;
+
+    padding: 1rem 3rem;
+}
+
+input{
+    display: block;
+
+    height: 3rem;
+    width: 100%;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 1rem;
+    padding: .5rem .3rem;
+
+    border-radius: var(--borderRadiusSquareRound);
+}
+
+input[type=text],
+input[type=password],
+input[type=email]{
+    box-sizing: border-box;
+
+    padding-left: 1rem;
+
+    border: hsl(0, 0%, 85%) 1px solid;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus{
+    outline-color: var(--accent);
+}
+
+input[type=submit]{
+
+    margin-top: 2rem;
+    padding: .5rem;
+
+    background-color: var(--accent);
+
+    color: var(--neutral);
+
+    border: none;
+    border-radius: var(--borderRadiusRound);
+}
+
+hr{
+    margin: 1rem 0;
+}
