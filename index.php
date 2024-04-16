@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION["user_id"])) {
-    header("location: htdocs/page/login.php");
+    header("location: /page/login.php");
 }
 
 ?>
